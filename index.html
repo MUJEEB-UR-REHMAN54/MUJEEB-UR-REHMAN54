@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- ignore this link and style for now because it is there in the next lectures. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    
+    <style>
+        label{
+            color: white;
+            font-family:'Poppins', sans-serif;
+            font-size: 20px;
+        }
+        h2{ 
+            color: rgb(63, 200, 241);
+            font-family:'Poppins', sans-serif;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        MARQUEE{
+            font-family:'Poppins', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+        body{
+            background-image: url("https://i.pinimg.com/originals/9c/57/b6/9c57b65f8e15db38ebb6560fd6c3d210.jpg");
+        }
+    </style>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- this MARQUEE is copied from internet dont know how it works -->
+    <MARQUEE bgcolor="red" loop="-5" scrollamount="20" width="100%">Please be careful and provide the information correctly Thank u from Cheepa.</MARQUEE>
+
+    <!-- form tag means that data is saved data as a form -->
+    <form action="backend.php">
+        
+        <!-- label tag is used for providing label to a tag  -->
+        <label for="name">Form</label>
+
+        <!-- div tag means division tag which accuire space of a block width -->
+        <div>
+            <label for="name">Name:</label>
+            <!-- input tag is a in-line tag of a form-->
+            <input type="text" name = "myName" id = "name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role:</label>
+            <!-- name is that  attritube through which your backend determines your input tag type -->
+            <input type="text" name = "myrole" id = "role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name = "myEmail" id = "email" >
+        </div>
+        <br>
+        <div>
+            <label for="number">Number:</label>
+            <input type="number" name="myNumber" id = "number">  
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id = "date">
+        </div>
+        <br>
+        
+        <div>
+
+            <!-- for attribute connects with the id of the tag to be labelized -->
+            <label for="eligibility">Are you eligible:</label>
+
+            <!-- checked means that the checkbox is already checked but can be unchecked on browser -->
+            <input type="checkbox" name="myEligibility" id = "eligibility" checked>
+        </div>
+        <br>
+        <div>
+            
+            <!-- having same name in different input means that only one input can be used at a time -->
+            <label for="Male">GENDER: </label><label for="Male">Male:</label><input type="radio" name="myGender" id = "Male"> 
+            <label for="FeMale">Female:</label> <input type="radio" name="myGender" id = "FeMale"> 
+            <label for="other">Other:</label><input type="radio" name="myGender" id = "other">
+        </div>
+        <br>
+        <div>
+
+            <label for="car">Car</label>
+
+            <!-- select tag to select among options -->
+            <select name="myCar" id="car">
+                <option value="Honda">Honda</option>
+
+                <!-- selected attribute is just like checked in ckeckbox -->
+                <option value="Toyota" selected>Toyota</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="yourself">Write about yourself:</label>
+            <!-- textarea is the tag for the a text box -->
+            <br> <textarea name="myText" id="yourself" cols="50" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value = "Submit Now">
+            <input type="reset" value = "Reset Now">
+        </div>
+        
+    </form>
+</body>
+</html>
