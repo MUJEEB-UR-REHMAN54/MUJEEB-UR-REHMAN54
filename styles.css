@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    background: #060f1e;
+    color: white;
+    text-align: center;
+  }
+div.container{
+  font-size: 0.45em;
+  font-weight: bold;
+}
+nav.navbar{
+  background-image: url("abstract_1.jpg");
+}
+a.navbar-brand>img{
+  width: 8vw;
+}
+a.navbar-brand{
+  padding: 0%;
+}
+
+@media (max-width: 991px){
+  a.navbar-brand>img{
+    width: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  a.navbar-brand>img{
+    width: 10vw;
+  }
+}
