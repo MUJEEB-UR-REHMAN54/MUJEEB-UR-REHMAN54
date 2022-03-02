@@ -4,7 +4,18 @@ body {
     background: #060f1e;
     color: white;
     text-align: center;
-  }
+}
+.btn-outline-success{
+  color: #060f1e;
+  border-color: #060f1e;
+}
+.btn-outline-success:hover{
+  background-color: #060f1e;
+}
+.btn-outline-success:active:focus{
+  box-shadow: 0 0 0 0.25rem #294a83;
+  border-color: #060f1e;
+}
 div.container{
   font-size: 0.45em;
   font-weight: bold;
