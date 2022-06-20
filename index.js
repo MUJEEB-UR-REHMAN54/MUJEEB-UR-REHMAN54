@@ -18,7 +18,7 @@ class Matches extends Component {
   };
 
   componentDidMount() {
-    const leagues = [
+//     const leagues = [
       { _id: "", name: "All Leagues", teams: [] },
       ...getLeagues(),
     ];
